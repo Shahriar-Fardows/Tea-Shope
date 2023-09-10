@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind custom css  -->
     <script>
         tailwind.config = {
@@ -21,7 +25,11 @@
                     colors: {
                         clifford: '#da373d',
                         "nav-bg-start": '#ff00001a',
-                        "nav-bg-end": '#FF89381A'
+                        "nav-bg-end": '#FF89381A',
+                        "primary-text":"#1C1C1C",
+                        "secondary-text":"#777",
+                        "btn-bg-start":"#F00",
+                        "btn-bg-end":"#FF8938"
                     }
                 }
             }
@@ -42,7 +50,7 @@
 <body class="manrope">
     <header class="bg-gradient-to-r from-nav-bg-start to-nav-bg-end">
         <nav class="container mx-auto lg:p-0 md:px-5 px-2">
-            <div class="navbar text-black">
+            <div class="navbar p-0 text-black">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -85,7 +93,23 @@
             </div>
         </nav>
         <!-- nav bar end  -->
-        
+        <div class="container mx-auto lg:p-0 md:px-5 px-2">
+            <div class="flex lg:flex-row md:flex-col flex-col items-center ">
+                <div class="lg:w-1/2">
+                    <h1 class="text-8xl text-primary-text">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 text-secondary-text text-lg">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                    <button class="btn bg-gradient-to-r from-btn-bg-start to-btn-bg-end text-white border-0">Get Started</button>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="./images/banner.png" class="" />
+                    <div class=" flex bg-[#FFFFFF] lg:w-1/3 md:w-1/2 md:translate-x-1/3  rounded-xl p-5 relative lg:translate-x-1/2 bottom-10 lg:bottom-20 md:bottom-20 ">
+                        <i class="fa-solid fa-star text-4xl mr-3 text-[#FFF082]"></i>
+                        <p class="text-3xl leading-5 text-primary-text">5.00<br> <span class="text-base space-y-2 text-secondary-text">Trust Pilot Ratings</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
